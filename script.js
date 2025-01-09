@@ -42,7 +42,7 @@ function getResult() {
     
     if (perc <= curPerc) {
         resultHead.innerHTML = `
-            You have sufficient attendance ${total - missed} / ${total} = <span class="fin-attend">${curPerc.toFixed(2)}</span>.
+            You have sufficient attendance ${total - missed} / ${total} = <span class="fin-attend">${curPerc.toFixed(2)}%</span>.
         `;
     } else {
         var result = Math.ceil((total - missed - (perc*total))/(perc - 1));
@@ -51,9 +51,9 @@ function getResult() {
         var finResult = (nume/denom).toFixed(2);
     
         resultHead.innerHTML = `
-            You have insufficient attendance ${total - missed} / ${total} = <span class="insuf-attend">${curPerc.toFixed(2)}</span>!<br>
-            You need attend <span class="needed-class">${result}</span> more classes to get <span class="fin-attend">${perc}%</span>.<br>
-            ${nume} / ${denom} = <span class="fin-attend">${finResult}</span>.
+            You have insufficient attendance ${total - missed} / ${total} = <span class="insuf-attend">${curPerc.toFixed(2)}%</span>!<br>
+            You need to attend <span class="needed-class">${result}</span> more class(es) to get <span class="fin-attend">${perc}%</span>.<br>
+            ${nume} / ${denom} = <span class="fin-attend">${finResult}%</span>.
         `;
     }
 
