@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Attendance Calculator</title>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Attendance Calculator</h1>
+
+    <table>
+        <tr>
+            <td class="left-col">Percentage Needed:</td>
+            <td class="right-col">
+                <input type="number" name="perc" id="requiredPerc" value="75">
+            </td>
+        </tr>
+        <tr>
+            <td class="left-col">Total Classes:</td>
+            <td class="right-col">
+                <input type="number" name="totClass" id="totalClasses">
+            </td>
+        </tr>
+        <tr>
+            <td class="left-col">Classes Missed:</td>
+            <td class="right-col">
+                <input type="number" name="missClass" id="missedClasses">
+            </td>
+        </tr>
+    </table>
+
+    <input type="button" value="Calculate" class="calc-button" onclick="buttonClicked()" id="calcButton">
+
+    <p class="result" id="result"></p>
+
+</body>
+</html>
