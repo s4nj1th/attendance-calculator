@@ -2,11 +2,13 @@
     font-family: 'JetBrains Mono', Courier, monospace;
 }
 
-body {
-    background-color: #2d2d2d;
-    color: #eee;
+html {
     text-align: center;
-    font-size: 2.5vh;
+}
+
+html.dark {
+    background-color: #1d1d1d;
+    color: #eee;
 }
 
 table {
@@ -18,38 +20,66 @@ h1 {
     margin-bottom: 8vh;
 }
 
+table {
+    border: #2228 solid 1px;
+    padding: 1vh 4vw;
+    border-radius: 4px;
+}
+
+td {
+    padding: 0vh 0;
+}
+
 td.left-col {
     text-align: right;
-    padding-right: 1vw;
-    width: 40vw;
+    padding-right: 2vw;
+    max-width: 40vw;
 }
 
 td.right-col {
     text-align: left;
-    padding-left: 1vw;
-    width: 40vw;
+    padding-left: 2vw;
+    max-width: 40vw;
+    padding: 0;
 }
 
-input {
-    width: 30vw;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
     text-align: center;
-    font-size: 2.5vh;
-    background-color: #1d1d1d;
-    color: #eee;
-    border: #222;
+    background: #1111;
+    border: #2228 solid 1px;
+    border-radius: 4px;
+    height: 4vh;
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+select {
+    width: 100%;
+    background: #1111;
+    text-align: center;
+    border: #2228 solid 1px;
+    border-radius: 4px;
+    height: 4vh;
 }
 
 .calc-button {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    background-color: #aba;
-    color: #222;
+    margin-top: 2vh;
+    margin-bottom: 7vh;
+    background-color: #6b6;
     font-weight: bolder;
-    border-bottom: #898 5px solid;
-    height: 8vh;
-    border-radius: 5px;
-    box-shadow: #1119 0px 10px 10px;
-    animation: ease-in-out 2s reverse 0 infinite backwards both;
+    border: none;
+    border-bottom: #494 5px solid;
+    max-height: 8vh;
+    border-radius: 6px;
+    box-shadow: #1117 0px 10px 10px;
+    /* padding: 1vh; */
+    outline: #494 solid 2px;
 }
 
 span.fin-attend {
@@ -67,4 +97,11 @@ span.needed-class {
     font-weight: bold;
     font-size: larger;
     color: #6b6;
+}
+
+footer {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    text-align: right;
 }
