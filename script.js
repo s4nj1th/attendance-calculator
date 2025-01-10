@@ -62,12 +62,12 @@ function getResult() {
 
                 var nume = (Number(total) - Number(missed));
                 var denom = (Number(total) + Number(result));
-                var finResult = (nume/denom).toFixed(2);
+                var finResult = nume/denom;
 
                 resultHead.innerHTML = `
-                    You have sufficient attendance ${total - missed} / ${total} = <span class="fin-attend">${curPerc.toFixed(2)}%</span>.<br>
+                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(100*curPerc).toFixed(2)}%</span>.<br>
                     You can skip <span class="needed-class">${result}</span> more classes.<br>
-                    ${nume} / ${denom} = <span class="fin-attend">${finResult}%</span>.
+                    ${nume}/${denom} = <span class="fin-attend">${(100*finResult).toFixed(2)}%</span>.
 
                 `;
             } else {
@@ -77,7 +77,7 @@ function getResult() {
                 calcbtn.style.outlineColor = "#494";
 
                 resultHead.innerHTML = `
-                    You have sufficient attendance ${total - missed} / ${total} = <span class="fin-attend">${curPerc.toFixed(2)}%</span>.<br>
+                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(100*curPerc).toFixed(2)}%</span>.<br>
                     You <span class="fin-attend"><u>CAN'T</u></span> skip any more classes.
                 `;
             }
@@ -85,16 +85,16 @@ function getResult() {
             var result = Math.ceil((total - missed - (perc*total))/(perc - 1));
             var nume = (Number(result) + Number(total) - Number(missed));
             var denom = (Number(result) + Number(total));
-            var finResult = (nume/denom).toFixed(2);
+            var finResult = nume/denom;
 
             calcbtn.style.background = "#b66";
             calcbtn.style.borderBottomColor = "#944";
             calcbtn.style.outlineColor = "#944";
         
             resultHead.innerHTML = `
-                You have insufficient attendance ${total - missed} / ${total} = <span class="insuf-attend">${curPerc.toFixed(2)}%</span>!<br>
-                You need to attend <span class="needed-class">${result}</span> more classes to get <span class="fin-attend">${perc}%</span>.<br>
-                ${nume} / ${denom} = <span class="fin-attend">${finResult}%</span>.
+                You have insufficient attendance ${total - missed}/${total} = <span class="insuf-attend">${(100*curPerc).toFixed(2)}%</span>!<br>
+                You need to attend <span class="needed-class">${result}</span> more classes to get <span class="fin-attend">${perc*100}%</span>.<br>
+                ${nume}/${denom} = <span class="fin-attend">${(100*finResult).toFixed(2)}%</span>.
             `;
         }
     }
