@@ -3,12 +3,9 @@
 }
 
 html {
-    text-align: center;
-}
-
-html.dark {
     background-color: #1d1d1d;
     color: #eee;
+    text-align: center;
 }
 
 table {
@@ -21,7 +18,7 @@ h1 {
 }
 
 table {
-    border: #2228 solid 1px;
+    border: #8888 solid 1px;
     padding: 1vh 4vw;
     border-radius: 4px;
 }
@@ -44,19 +41,21 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
     text-align: left;
     background: #1111;
-    border: #2228 solid 1px;
+    border: #8888 solid 1px;
     border-radius: 4px;
     height: 4vh;
     appearance: textfield;
     -moz-appearance: textfield;
     max-width: 30vw;
     padding: 0 2vw !important;
+    color: #eee;
 }
 
 select {
+    color: #eee;
     max-width: 20vw;
     background: #1111;
-    border: #2228 solid 1px;
+    border: #8888 solid 1px;
     border-radius: 4px;
     height: 4vh;
 }
