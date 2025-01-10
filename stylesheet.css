@@ -27,20 +27,12 @@ table {
 }
 
 td {
-    padding: 0vh 0;
-}
-
-td.left-col {
+    padding: 1vh 0;
     text-align: right;
-    padding-right: 2vw;
-    max-width: 40vw;
 }
 
-td.right-col {
+label {
     text-align: left;
-    padding-left: 2vw;
-    max-width: 40vw;
-    padding: 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -50,19 +42,20 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="number"] {
-    text-align: center;
+    text-align: left;
     background: #1111;
     border: #2228 solid 1px;
     border-radius: 4px;
     height: 4vh;
     appearance: textfield;
     -moz-appearance: textfield;
+    max-width: 30vw;
+    padding: 0 2vw !important;
 }
 
 select {
-    width: 100%;
+    max-width: 20vw;
     background: #1111;
-    text-align: center;
     border: #2228 solid 1px;
     border-radius: 4px;
     height: 4vh;
@@ -97,6 +90,10 @@ span.needed-class {
     font-weight: bold;
     font-size: larger;
     color: #6b6;
+}
+
+.result {
+    margin-bottom: 8vh;
 }
 
 footer {

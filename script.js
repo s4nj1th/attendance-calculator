@@ -78,7 +78,7 @@ function getResult() {
 
                 resultHead.innerHTML = `
                     You have sufficient attendance ${total - missed} / ${total} = <span class="fin-attend">${curPerc.toFixed(2)}%</span>.<br>
-                    You <span class="fin-attend">CAN'T</span> skip any more classes.
+                    You <span class="fin-attend"><u>CAN'T</u></span> skip any more classes.
                 `;
             }
         } else {
