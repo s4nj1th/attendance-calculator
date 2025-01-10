@@ -97,6 +97,7 @@ span.needed-class {
 }
 
 footer {
+    font-size: x-small;
     position: fixed;
     bottom: 2vh;
     right: 2vw;
