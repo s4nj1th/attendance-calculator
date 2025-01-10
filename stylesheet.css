@@ -47,17 +47,18 @@ input[type="number"] {
     appearance: textfield;
     -moz-appearance: textfield;
     max-width: 30vw;
-    padding: 0 2vw !important;
+    padding: 0 2vw;
     color: #eee;
 }
 
 select {
     color: #eee;
-    max-width: 20vw;
+    max-width: 40vw;
     background: #1111;
     border: #8888 solid 1px;
     border-radius: 4px;
     height: 4vh;
+    padding: 0 2vw;
 }
 
 .calc-button {
