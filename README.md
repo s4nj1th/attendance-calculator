@@ -5,11 +5,11 @@ simple static webapge to find out how many more classes to get past the attendan
 
 wont be maintained
 
-![image](https://github.com/user-attachments/assets/e601623e-bf78-4d47-8cfd-2e853784f397)
+![image](https://github.com/user-attachments/assets/20b5870b-07c3-41e3-b8c0-6bad18cde542)
 
 ---
-screenshots:
-![image](https://github.com/user-attachments/assets/af99b818-9355-44ec-b02d-66ee5b66eccc)
-![image](https://github.com/user-attachments/assets/6fe85084-9ab1-4dff-99d7-5efc67ace0dd)
-![image](https://github.com/user-attachments/assets/15e35677-51bc-4510-bbbb-3386bd536e5d)
 
+screenshots:
+![image](https://github.com/user-attachments/assets/121a3265-91a9-4d14-b08a-6934234f11be)
+![image](https://github.com/user-attachments/assets/ca1bc6bf-1ea9-40d2-a836-5bd55d11433f)
+![image](https://github.com/user-attachments/assets/9f83bbe4-49e9-4483-8352-b3e7111d0acf)
