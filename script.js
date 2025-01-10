@@ -60,8 +60,8 @@ function getResult() {
                 calcbtn.style.borderBottomColor = "#494";
                 calcbtn.style.outlineColor = "#494";
 
-                var nume = (Number(total) - Number(missed));
-                var denom = (Number(total) + Number(result));
+                var nume = (total - missed);
+                var denom = (total + result);
                 var finResult = nume/denom;
 
                 resultHead.innerHTML = `
@@ -83,8 +83,8 @@ function getResult() {
             }
         } else {
             var result = Math.ceil((total - missed - (perc*total))/(perc - 1));
-            var nume = (Number(result) + Number(total) - Number(missed));
-            var denom = (Number(result) + Number(total));
+            var nume = (result + total - missed);
+            var denom = (result + total);
             var finResult = nume/denom;
 
             calcbtn.style.background = "#b66";
