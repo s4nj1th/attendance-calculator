@@ -1,5 +1,5 @@
 * {
-    font-family: 'JetBrains Mono', Courier, monospace;
+    font-family: 'Atkinson Hyperlegible', Courier, monospace;
 }
 
 html {
@@ -51,6 +51,7 @@ select {
     padding: 0 2vw;
     color: #eee;
     box-shadow: 0 0 0 1px hsla(0, 0, 100%, 0.14);
+    margin: auto 2vw;
 }
 
 select {
