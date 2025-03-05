@@ -10,6 +10,5 @@ wont be maintained
 ---
 
 screenshots:
-![image](https://github.com/user-attachments/assets/121a3265-91a9-4d14-b08a-6934234f11be)
-![image](https://github.com/user-attachments/assets/ca1bc6bf-1ea9-40d2-a836-5bd55d11433f)
-![image](https://github.com/user-attachments/assets/9f83bbe4-49e9-4483-8352-b3e7111d0acf)
+![image](https://github.com/user-attachments/assets/4a51ad01-4697-4b07-a5d3-7d2500a3facc)
+![image](https://github.com/user-attachments/assets/bd034922-dcd6-4d0a-82e2-a1524f9c9f75)
