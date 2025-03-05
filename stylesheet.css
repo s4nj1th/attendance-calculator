@@ -1,35 +1,56 @@
 * {
-    font-family: 'Atkinson Hyperlegible', Courier, monospace;
+  font-family: "Atkinson Hyperlegible", Courier, monospace;
 }
 
 html {
-    background-color: #000;
-    color: #eee;
-    text-align: center;
-}
-
-table {
-    margin: auto;
+  background-color: #000;
+  color: #eee;
+  text-align: center;
 }
 
 h1 {
-    margin-top: 4vh;
-    margin-bottom: 8vh;
+  margin-top: 4vh;
+  margin-bottom: 8vh;
 }
 
-table {
-    border: #8888 solid 1px;
-    padding: 1vh 4vw;
-    border-radius: 6px;
+.main {
+  display: table;
+  width: 100%;
+  max-width: 400px; /* Adjust width as needed */
+  margin: auto;
+  /* border: #8888 1px solid; */
+  border-radius: 4px;
 }
 
-td {
-    padding: 1vh 0;
-    text-align: right;
+.row {
+  display: table-row;
 }
 
-label {
-    text-align: left;
+.left,
+.right {
+  display: table-cell;
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+.left {
+  font-weight: bold;
+  text-align: right;
+  width: 50%; /* Adjust label width */
+}
+
+.right {
+  text-align: left;
+  width: 50%;
+}
+
+.right select,
+.right input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 input::-webkit-outer-spin-button,
@@ -40,69 +61,67 @@ input::-webkit-inner-spin-button {
 
 input:not(.calc-button),
 select {
-    text-align: left;
-    background-color: #0a0a0a;
-    border: #8888 solid 1px;
-    border-radius: 6px;
-    height: 4vh;
-    appearance: textfield;
-    -moz-appearance: textfield;
-    max-width: 30vw;
-    padding: 0 2vw;
-    color: #eee;
-    box-shadow: 0 0 0 1px hsla(0, 0, 100%, 0.14);
-    margin: auto 2vw;
+  text-align: left;
+  background-color: #0a0a0a;
+  border: #8888 solid 1px;
+  border-radius: 6px;
+  height: 4vh;
+  /* appearance: textfield;
+  -moz-appearance: textfield; */
+  padding: 0 2vw;
+  color: #eee;
+  box-shadow: 0 0 0 1px hsla(0, 0, 100%, 0.14);
+  margin: auto 2vw;
 }
 
 select {
-    color: #eee;
-    max-width: 40vw;
-    background: hsla(0, 0, 4%, 1);
-    border: #8888 solid 1px;
-    border-radius: 4px;
-    height: 4vh;
-    padding: 0 2vw;
+  color: #eee;
+  background: hsla(0, 0, 4%, 1);
+  /* border: #8888 solid 1px; */
+  border-radius: 4px;
+  height: 4vh;
+  padding: 0 2vw;
 }
 
 .calc-button {
-    margin-top: 2vh;
-    margin-bottom: 7vh;
-    background-color: #6b6;
-    font-weight: bolder;
-    border: none;
-    border-bottom: #494 5px solid;
-    max-height: 8vh;
-    border-radius: 6px;
-    box-shadow: #1117 0px 10px 10px;
-    /* padding: 1vh; */
-    outline: #494 solid 2px;
+  margin-top: 2vh;
+  margin-bottom: 7vh;
+  background-color: #6b6;
+  font-weight: bolder;
+  border: none;
+  border-bottom: #494 5px solid;
+  max-height: 8vh;
+  border-radius: 6px;
+  box-shadow: #1117 0px 10px 10px;
+  /* padding: 1vh; */
+  outline: #494 solid 2px;
 }
 
 span.fin-attend {
-    font-weight: bold;
-    font-size: larger;
+  font-weight: bold;
+  font-size: larger;
 }
 
 span.insuf-attend {
-    font-weight: bold;
-    font-size: larger;
-    color: #b66;
+  font-weight: bold;
+  font-size: larger;
+  color: #b66;
 }
 
 span.needed-class {
-    font-weight: bold;
-    font-size: larger;
-    color: #6b6;
+  font-weight: bold;
+  font-size: larger;
+  color: #6b6;
 }
 
 .result {
-    margin-bottom: 8vh;
+  margin-bottom: 8vh;
 }
 
 footer {
-    font-size: x-small;
-    position: fixed;
-    bottom: 2vh;
-    right: 2vw;
-    text-align: right;
+  font-size: x-small;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  text-align: right;
 }
