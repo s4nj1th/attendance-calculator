@@ -11,4 +11,4 @@ wont be maintained
 
 screenshots:
 ![image](https://github.com/user-attachments/assets/4a51ad01-4697-4b07-a5d3-7d2500a3facc)
-![image](https://github.com/user-attachments/assets/bd034922-dcd6-4d0a-82e2-a1524f9c9f75)
+![image](https://github.com/user-attachments/assets/0ad5de3a-9416-4f1c-a69f-b1627985d031)
