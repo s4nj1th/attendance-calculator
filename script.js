@@ -65,7 +65,7 @@ function getResult() {
                 var finResult = nume/denom;
 
                 resultHead.innerHTML = `
-                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(100*curPerc).toFixed(2)}%</span>.<br>
+                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(curPerc).toFixed(2)}%</span>.<br>
                     You can skip <span class="needed-class">${result}</span> more classes.<br>
                     ${nume}/${denom} = <span class="fin-attend">${(100*finResult).toFixed(2)}%</span>.
 
@@ -77,7 +77,7 @@ function getResult() {
                 calcbtn.style.outlineColor = "#494";
 
                 resultHead.innerHTML = `
-                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(100*curPerc).toFixed(2)}%</span>.<br>
+                    You have sufficient attendance ${total - missed}/${total} = <span class="fin-attend">${(curPerc).toFixed(2)}%</span>.<br>
                     You <span class="fin-attend"><u>CAN'T</u></span> skip any more classes.
                 `;
             }
@@ -92,8 +92,8 @@ function getResult() {
             calcbtn.style.outlineColor = "#944";
         
             resultHead.innerHTML = `
-                You have insufficient attendance ${total - missed}/${total} = <span class="insuf-attend">${(100*curPerc).toFixed(2)}%</span>!<br>
-                You need to attend <span class="needed-class">${result}</span> more classes to get <span class="fin-attend">${perc*100}%</span>.<br>
+                You have insufficient attendance ${total - missed}/${total} = <span class="insuf-attend">${(curPerc).toFixed(2)}%</span>!<br>
+                You need to attend <span class="needed-class">${result}</span> more classes to get <span class="fin-attend">${perc}%</span>.<br>
                 ${nume}/${denom} = <span class="fin-attend">${(100*finResult).toFixed(2)}%</span>.
             `;
         }
