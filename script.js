@@ -32,7 +32,7 @@ function changeButtonStyle() {
 }
 
 function getResult() {
-    var perc = parseInt(document.getElementById("requiredPerc").value) / 100;
+    var perc = parseInt(document.getElementById("requiredPerc").value);
     var total = parseInt(document.getElementById("totalClasses").value);
     var missed = parseInt(document.getElementById("missedClasses").value);
 
@@ -40,7 +40,7 @@ function getResult() {
 
     const calcbtn = document.getElementById("calcButton");
 
-    var curPerc = (total - missed)/total;
+    var curPerc = 100*(total - missed)/total;
     if (missed > total || isNaN(total) || isNaN(missed) || isNaN(perc)) {
         
         calcbtn.style.background = "#b66";
@@ -52,7 +52,7 @@ function getResult() {
         `;
     } else {
         if (perc <= curPerc) {
-            var result = Math.floor((total - missed - (perc*total))/(perc + 1));
+            var result = Math.floor((100 * (total - missed) - perc * total) / perc);
             
             if (result > 0) {
 
@@ -82,7 +82,7 @@ function getResult() {
                 `;
             }
         } else {
-            var result = Math.ceil((total - missed - (perc*total))/(perc - 1));
+            var result = Math.ceil((perc * total - 100 * (total-missed)) / (100 - perc));
             var nume = (result + total - missed);
             var denom = (result + total);
             var finResult = nume/denom;
