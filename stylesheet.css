@@ -59,7 +59,9 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input:not(.calc-button) {
+input:not(.calc-button),
+select,
+#requiredPerc {
   text-align: left;
   background-color: #0a0a0a;
   border: #8888 solid 1px;
@@ -71,16 +73,6 @@ input:not(.calc-button) {
   color: #eee;
   box-shadow: 0 0 0 1px hsla(0, 0, 100%, 0.14);
   margin: auto 2vw;
-}
-
-select,
-#requiredPerc {
-  color: #eee;
-  background: hsla(0, 0, 4%, 1);
-  /* border: #8888 solid 1px; */
-  border-radius: 4px;
-  height: 4vh;
-  padding: 0 2vw;
 }
 
 .calc-button {
