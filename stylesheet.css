@@ -59,8 +59,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input:not(.calc-button),
-select {
+input:not(.calc-button) {
   text-align: left;
   background-color: #0a0a0a;
   border: #8888 solid 1px;
@@ -74,7 +73,8 @@ select {
   margin: auto 2vw;
 }
 
-select {
+select,
+#requiredPerc {
   color: #eee;
   background: hsla(0, 0, 4%, 1);
   /* border: #8888 solid 1px; */
